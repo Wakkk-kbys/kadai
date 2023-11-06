@@ -31,6 +31,19 @@ body {
   min-width: 960px;
   overflow-x: hidden;
 }
+.outer {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wrapper {
+  width: 1920px;
+  margin: auto;
+
+}.relative {
+  position: relative;
+}
 .header_img {
   position: fixed;
   top: 19px;
@@ -50,10 +63,9 @@ body {
   transition: filter 0.3 ease;
 }
 .main_image {
-  display: block;
-  right: 20%;
-  width: 100%;
-  height: 700px;
+  width: 1920px;
+  height: auto;
+  vertical-align: bottom;
 }
 .redline {
   background-color: #d42e1e;
