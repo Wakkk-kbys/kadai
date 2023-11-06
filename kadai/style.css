@@ -1,0 +1,96 @@
+@charset 'UTF-8';
+
+/* PC,スマホ共通スタイル */
+* {
+   margin: 0;
+}
+
+body {
+  font-family: "メイリオ", "Meiryo", "HIragino Sans W6", "Hiragino Sans","ヒラギノ角ゴシック",Arial, sans-serif;
+  font-feature-settings: "palt";
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+
+/* PC用スタイル */
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 768px) {
+  /* PC用のスタイルを指定する */
+
+body {
+  max-width: 1920px;
+  min-width: 960px;
+  overflow-x: hidden;
+}
+.outer {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wrapper {
+  width: 1920px;
+  margin: auto;
+
+}.relative {
+  position: relative;
+}
+.header_img {
+  position: fixed;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1080px;
+  z-index: 10;
+}
+#header_btn{
+  position: fixed;
+  top: 59px;
+  left: 62.4%;
+  width: 316px;
+  height: 48px;
+  z-index: 11;
+  transform: translateY(-50%);
+  transition: filter 0.3 ease;
+}
+.main_image {
+  width: 1920px;
+  height: auto;
+  vertical-align: bottom;
+}
+.redline {
+  background-color: #d42e1e;
+  width: 1920px;
+  height: 248px;
+  position: relative;
+}
+.line_text {
+  text-align: center;
+  color: #ffffff;
+}
+.line_btn {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  width: 642px;
+  height: 100px;
+  transform: translate(-50%);
+  transition: filter 0.3 ease;
+}
+
+}
+
+/* スマホ用スタイル */
+/* 画面幅が767px以下のとき */
+@media screen and (max-width: 767px) {
+  /* スマートフォン用のスタイルを指定する */
+}
